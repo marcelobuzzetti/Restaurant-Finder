@@ -56,7 +56,7 @@ const Home = () => {
                     <CarouselTitle>Na sua Área</CarouselTitle>
                     <Carousel {...settings}>
                     {restaurants.map((restaurant) => (
-                        <Card 
+                        <Card restaurant={restaurant}
                             key={restaurant.place_id}
                             photo={restaurant.photos ? restaurant.photos[0].getUrl : restaurante} 
                             title={restaurant.name}

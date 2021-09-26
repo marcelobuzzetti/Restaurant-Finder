@@ -23,7 +23,7 @@ const RestaurantCard = ({ restaurant, onClick }) => {
             </RestaurantInfo>
             <RestaurantPhoto
             imageLoaded={imageLoaded} 
-            src={restaurant.photos ? restaurant.photos[0].getUrl : restaurante} 
+            src={restaurant.photos ? restaurant.photos[0].getUrl() : restaurante} 
             alt="Foto do Restaurante"
             onLoad={() => setImageLoaded(true)}
             />
